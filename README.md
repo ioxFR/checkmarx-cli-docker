@@ -1,4 +1,6 @@
 # checkmarx-cli-docker
+[![Docker Pulls](https://img.shields.io/docker/pulls/vlecerf/checkmarx-cli-docker.svg)](https://hub.docker.com/r/vlecerf/checkmarx-cli-docker) [![Docker Stars](https://img.shields.io/docker/stars/vlecerf/checkmarx-cli-docker.svg)](https://hub.docker.com/r/vlecerf/checkmarx-cli-docker/) [![](https://images.microbadger.com/badges/image/vlecerf/checkmarx-cli-docker:latest.svg)](https://microbadger.com/images/vlecerf/checkmarx-cli-docker:latest) [![GitHub issues](https://img.shields.io/github/issues/ioxFR/checkmarx-cli-docker.svg)](https://github.com/ioxFR/checkmarx-cli-docker) [![license](https://img.shields.io/github/license/ioxFR/checkmarx-cli-docker.svg)](https://github.com/ioxFR/checkmarx-cli-docker/blob/master/LICENSE)
+
 Docker image that integrate the last version of checkmarx CLI
 
 ## Current CheckMarx CLI Version: 8.80.2
