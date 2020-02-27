@@ -1,14 +1,14 @@
 # CheckMarx require JRE to run, we base our image on light alpine image with JRE
-# Checkmarx version: 8.80.2 min supported 8.8
+# Checkmarx version: 8.90.2 min supported 8.9
 FROM openjdk:jre-alpine
 MAINTAINER Valentin LECERF <valentin.lecerf@vlecerf.com>
 
 RUN apk add --no-cache --update curl python jq bash
 
 # URL of the last version of checkmarx console
-ARG CHECKMARK_CX_CLI_URL="https://download.checkmarx.com/8.8.0/Plugins/CxConsolePlugin-8.80.2.zip"
+ARG CHECKMARK_CX_CLI_URL="https://download.checkmarx.com/8.9.0/Plugins/CxConsolePlugin-8.90.2.zip"
 # Directory name of the console plugin
-ARG CHECKMARX_DIRECTORY="CxConsolePlugin-8.80.2"
+ARG CHECKMARX_DIRECTORY="CxConsolePlugin-8.90.2"
 
 RUN curl ${CHECKMARK_CX_CLI_URL} -o /tmp/console.zip
 
