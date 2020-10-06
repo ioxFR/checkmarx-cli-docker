@@ -7,16 +7,13 @@ RUN apk add --no-cache --update curl python jq bash
 
 # URL of the last version of checkmarx console
 ARG CHECKMARK_CX_CLI_URL="https://download.checkmarx.com/9.0.0/Plugins/CxConsolePlugin-2020.3.1.zip"
-# Directory name of the console plugin
-ARG CHECKMARX_DIRECTORY="CxConsolePlugin-2020.3.1"
 
 RUN curl ${CHECKMARK_CX_CLI_URL} -o /tmp/console.zip
 
 RUN mkdir -p /opt/CxConsolePlugin && \
-    unzip /tmp/console.zip -d /tmp && \
+    unzip /tmp/console.zip -d /opt/CxConsolePlugin && \
     mv /tmp/${CHECKMARX_DIRECTORY}/* /opt/CxConsolePlugin && \
     rm -rf /tmp/console.zip && \
-    rm -rf /tmp/${CHECKMARX_DIRECTORY} && \
     chmod +x /opt/CxConsolePlugin/runCxConsole.sh && \
     rm -rf /var/cache/apk/*
 
