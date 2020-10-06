@@ -3,12 +3,12 @@
 
 Docker image that integrate the last version of checkmarx CLI
 
-## Current CheckMarx CLI Version: 8.90.2
+## Current CheckMarx CLI Version: 9.0.0
 
 ## Available versions
-- 8.8
+- 9.0
 - 8.9
-
+- 8.8
 Checkout release to see versions available and details
 
 ## Usage
